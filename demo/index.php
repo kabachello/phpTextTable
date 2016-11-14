@@ -1,16 +1,7 @@
-# phpTextTable
-Easily convert PHP arrays into plain text tables or strings with a fixed field length for each column
-
-## Installation
-```
-composer require kabachello/phptexttable:*
-```
-
-## Quick start
-```php
 <?php
 	use kabachello\phpTextTable\TextTable;
-
+	
+	require_once '..' . DIRECTORY_SEPARATOR . 'TextTable.php';
 	error_reporting(E_ALL & ~E_NOTICE);
 	
 	$rows = array(
@@ -35,16 +26,3 @@ composer require kabachello/phptexttable:*
 	// Print the table
 	print $text_table->print($row_key);
 ?>
-```
-
-will print the following:
-```
-+---------+------------------------+-------------+-------------+
-|  CITY   |         STATE          |  POP. 1950  |  POP. 2015  |
-+---------+------------------------+-------------+-------------+
-| Berlin  | Berlin                 |     3336026 |     3520031 |
-| Hamburg | Hamburg                |     1605606 |     1787408 |
-| Munich  | Bavaria                |      831937 |     1450381 |
-| Cologne | North Rhine-Westphalia |      594941 |     1060582 |
-+---------+------------------------+-------------+-------------+
-```

@@ -1,0 +1,15 @@
+{
+	"name" : "kabachello/phptexttable",
+	"description" : "Easily convert PHP arrays into plain text tables or strings with a fixed field length for each column",
+	"type" : "library",
+	"license" : "MIT",
+	"authors" : [{
+			"name" : "Andrej Kabachnik",
+			"email" : "kabachnik@gmail.com",
+			"role" : "Creator"
+		}
+	],
+	"support" : {
+		"issues" : "https://github.com/kabachello/phpTextTable/issues"
+	}
+}
