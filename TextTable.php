@@ -170,13 +170,15 @@ class TextTable {
     
     protected function print_row_line($append_newline = true) {
     	$result = '';
-        $result .= $this->get_separator_crossing();
-        foreach($this->get_column_widths() as $key => $val){
-            $result .= $this->get_separator_row() .
-                str_pad('', $val, $this->get_separator_row(), STR_PAD_RIGHT) .
-                $this->get_separator_row() .
-                $this->get_separator_crossing();
-        }
+    	if ($this->get_separator_row()){
+	        $result .= $this->get_separator_crossing();
+	        foreach($this->get_column_widths() as $key => $val){
+	            $result .= $this->get_separator_row() .
+	                str_pad('', $val, $this->get_separator_row(), STR_PAD_RIGHT) .
+	                $this->get_separator_row() .
+	                $this->get_separator_crossing();
+	        }
+    	}
         
         if($append_newline) $result .= "\n";
         
