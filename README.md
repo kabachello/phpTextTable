@@ -1,5 +1,5 @@
 # phpTextTable
-Easily convert PHP arrays into plain text tables or strings with a fixed field length for each column
+Easily converts PHP arrays into plain text tables, CSV files or strings with a fixed field length for each column
 
 ## Installation
 ```
