@@ -2,9 +2,17 @@
 namespace kabachello\phpTextTable;
 
 /**
+ * This class will transform the given PHP array into a plain text table with or without separators.
+ * It can be used to create
+ * text tables, CSV files or ASCII-files with fixed field lengts.
+ *
+ * Basic usage: new TextTable($rows)->print();
+ * See more on https://github.com/kabachello/phpTextTable
  *
  * @author Andrej Kabachnik
- *        
+ * @license MIT
+ * @link https://github.com/kabachello/phpTextTable
+ *      
  */
 class TextTable
 {
