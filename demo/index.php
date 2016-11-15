@@ -14,13 +14,13 @@ $rows = array(
 $text_table = new kabachello\phpTextTable\TextTable($rows);
 
 // Set right alignment for the numeric columns
-$text_table->set_column_alignments(array('Pop. 1950' => 'right', 'Pop. 2015' => 'right'));
+$text_table->setColumnAlignments(array('Pop. 1950' => 'right', 'Pop. 2015' => 'right'));
 
 // Set the numer columns to the same fixed with
-$text_table->set_column_width_max(array('Pop. 1950' => 11, 'Pop. 2015' => 11));
+$text_table->setColumnWidthMax(array('Pop. 1950' => 11, 'Pop. 2015' => 11));
 
 // Disable automatic width adjustment (only affects columns with max width)
-$text_table->set_column_width_auto(false);
+$text_table->setColumnWidthAuto(false);
 
 // Print the table
 print $text_table->print($row_key);
