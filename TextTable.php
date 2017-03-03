@@ -186,7 +186,7 @@ class TextTable
      */
     public function setPrintHeader($value)
     {
-        $this->print_header = $value ? true : false;
+        $this->print_header = filter_var($value, FILTER_VALIDATE_BOOLEAN);
         return $this;
     }
 
