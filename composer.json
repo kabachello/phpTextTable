@@ -11,5 +11,8 @@
 	],
 	"support" : {
 		"issues" : "https://github.com/kabachello/phpTextTable/issues"
-	}
+	},
+    "autoload": {
+        "psr-4": { "kabachello\\phptexttable\\": "" }
+    }
 }
